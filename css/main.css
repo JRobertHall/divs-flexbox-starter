@@ -119,6 +119,25 @@ body {
   align-items: center;
 }
 
+.introduction {
+  color: white;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.header p {
+  color: white;
+  font-size: 1.5em;
+}
+
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center, set height to auto*/
   display: flex;
@@ -137,7 +156,10 @@ body {
   font-size: 1.3em;
 }
 
-
+.footer {
+  width: 100%;
+  color: white;
+}
 
 /* ==========================================================================
    Helper classes
@@ -224,12 +246,35 @@ body {
       flex-basis: 30%;
     }
 
+    .header {
+      border-bottom: 1px solid #555;
+      margin: 0 0 15px 0;
+    }
+
     .div-1, .div-2 {
       border-right: 1px solid #555;
-      padding-right: 30px;
+      padding-right: 15px;
+    }
+
+    .footer {
+      border-top: 1px solid #555;
+      padding-top: 15px;
+      margin-top: 15px;
     }
 }
 
+@media all and (min-width: 768px) {
+    .header {
+      border-bottom: 1px solid #555;
+      padding: 0 0 15px 0;
+      margin: 0 0 15px 0;
+    }
+    .footer {
+      border-top: 1px solid #555;
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
